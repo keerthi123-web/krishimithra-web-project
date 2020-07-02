@@ -1,0 +1,792 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Krishi Mithra Portal | Farmer Page :: w3layouts</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Germinate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js 
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js"></script>-->
+<!-- font-awesome-icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- font-awesome-icons script -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- Table styles-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- //Table styles-->
+<style type="text/css"> 
+
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+  
+.table-wrapper {
+		
+		margin: 30px auto;
+        background: #fff;
+        padding: 20px;	
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    }
+    .table-title {
+        padding-bottom: 10px;
+        margin: 0 0 10px;
+    }
+    .table-title h2 {
+        margin: 6px 0 0;
+        font-size: 22px;
+    }
+    .table-title .add-new {
+        float: right;
+		height: 30px;
+		font-weight: bold;
+		font-size: 12px;
+		text-shadow: none;
+		min-width: 100px;
+		border-radius: 50px;
+		line-height: 13px;
+    }
+	.table-title .add-new i {
+		margin-right: 4px;
+	}
+    table.table {
+        table-layout: fixed;
+    }
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+    }
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    table.table th:last-child {
+        width: 100px;
+    }
+    table.table td a {
+		cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+		min-width: 24px;
+    }    
+	table.table td a.add {
+        color: #27C46B;
+    }
+    table.table td a.edit {
+        color: #FFC107;
+    }
+    table.table td a.delete {
+        color: #E34724;
+    }
+    table.table td i {
+        font-size: 19px;
+    }
+	table.table td a.add i {
+        font-size: 24px;
+    	margin-right: -1px;
+        position: relative;
+        top: 3px;
+    }    
+    table.table .form-control {
+        height: 32px;
+        line-height: 32px;
+        box-shadow: none;
+        border-radius: 2px;
+    }
+	table.table .form-control.error {
+		border-color: #f50000;
+	}
+	table.table td .add {
+		display: none;
+	}
+
+input[type=text] {
+  width: 40px;
+  height: 20px;
+  color:black;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 22px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+  
+
+
+</style>
+
+<script>
+function showTable(){
+document.getElementById('table').style.visibility = "visible";
+}
+function hideTable(){
+document.getElementById('table').style.visibility = "hidden";
+}
+</script>
+
+</head>
+	
+<body>
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="w3_agileits_banner_main_grid">
+				<div class="w3_agile_logo">
+					<h1><a href="../../../index.html"><span>K</span>rishi Mithra<i>Grow healthy crops</i></a></h1>
+				</div>
+				<!--<div class="agile_social_icons_banner">
+					<ul class="agileits_social_list">
+						<li><a href="login_modules.html" class="w3l_contact" style="font-family:Times New Roman;width:77px;font-size:18px;"><i class="fa fa-sign-in">&nbsp;Login</i></a></li>
+						<select id="Select Language" style="font-family:Times New Roman;width:107px;font-size:18px;height:28px;background-color:transparent;color:#d5fe77;border-style:5px solid white;">
+						     <option value="english">English</option>
+							 <option value="kannada">Kannada</option>
+							 <option value="hindi">Hindi</option>
+							 <option value="marathi">Marathi</option>
+						</select>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</ul>
+				</div>
+				<div class="agileits_w3layouts_menu">
+					<div class="shy-menu">
+						<a class="shy-menu-hamburger">
+							<span class="layer top"></span>
+							<span class="layer mid"></span>
+							<span class="layer btm"></span>
+						</a>
+						<div class="shy-menu-panel">
+							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
+								<ul class="w3layouts_menu__list">
+									<li><a href="index1.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li> 
+									<!--<li><a href="services.html">Services</a></li>
+									<li><a href="gallery.html">Gallery</a></li> 
+									<li class="active"><a href="contact.html">Contact Us</a></li>
+									<li><input type="text" ></li>
+								</ul>
+							</nav>
+						</div>-->
+						<div class="clearfix"> </div>
+					<!--</div>-->
+				<!--</div>-->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- banner -->
+<!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					Germinate
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<img src="images/4.jpg" alt=" " class="img-responsive" />
+						<p>Ut enim ad minima veniam, quis nostrum 
+							exercitationem ullam corporis suscipit laboriosam, 
+							nisi ut aliquid ex ea commodi consequatur? Quis autem 
+							vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam nihil molestiae consequatur, vel illum qui 
+							dolorem eum fugiat quo voluptas nulla pariatur.
+							<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+								esse quam nihil molestiae consequatur.</i></p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-pop-up -->
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="w3layouts_breadcrumbs_left">
+				<ul>
+					<li><i class="fa fa-home" aria-hidden="true"></i><a href="../../../index.html" ">Home</a><span>/</span></li>
+					<li ><i class='fas fa-hand-holiding-usd' aria-hidden="true"></i>Farmer</li>
+				</ul>
+			</div>
+			<div class="w3layouts_breadcrumbs_right">
+				<h2 style="margin-top:-1px;">Farmer</h2>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //breadcrumbs -->
+<!-- contact -->
+	<div class="welcome">
+		<div class="container">
+			<h3 class="agileits_w3layouts_head">Welcome to<span> Farmer</span> page</h3>
+			<div class="w3_agile_image">
+				<img src="images/1.png" alt=" " class="img-responsive" />
+			</div>
+			<p class="agile_para">The ultimate goal of farming is not the growing of crops,
+			                      but the cultivation and perfection of human beings.</p>
+			<div class="w3ls_news_grids" style="width:1800px;">
+				<div class="col-md-8 w3_agile_mail_left">
+					<div class="agileits_mail_grid_right1 agile_mail_grid_right1">
+					<h2 style="margin-bottom:-20px;" >Farmers Tabs</h2>
+					<div><button  style="margin-left:970px;background-color: #a0d034;border:none;text-transform: uppercase;margin-top:-100px;letter-spacing: 2px;color: #212121;
+padding: 10px 0;font-family:Arial Narrow;font-weight:600;width:100px;" >Logout</button></div>
+					<br>
+					
+<form role="form" action="/Farmer/FarmerPage" method="post" >
+
+<div class="tab">
+  <button class="tablinks" onclick="openFarmertabs(event, 'Add Crops')" id="defaultOpen">Add Crops</button>
+  <button class="tablinks" onclick="openFarmertabs(event, 'Update Crops')">Update Crops</button>
+  <button class="tablinks" onclick="openFarmertabs(event, 'Customer Details')">Customer Details</button>
+  <button class="tablinks" onclick="openFarmertabs(event, 'Shipping Details')">Shipping Details</button>
+</div>
+
+<div id="Add Crops" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Add Crops</h3>
+  <div class="container" >
+        <div class="table-wrapper" style="width:700px;">
+            <div class="table-title">
+                <div class="row">
+				<div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new" style="background-color:black;"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+			<table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>_id</th>
+                        <th>Date</th>
+                        <th>Crop Name</th>
+                        <th>Crop Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>29-03-2020</td>
+						<td>Papaya</td>
+						<td>Rs.30</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit"  style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+						<td>01-04-2020</td>
+                        <td>Rose</td>
+                        <td>Rs.10</td>
+                        <td>
+							<a class="add" title="Add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>30-03-2020</td>
+                        <td>lemon</td>
+						<td>Rs.5</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>      
+                </tbody>
+            </table>
+        </div>
+    </div>     
+</div>
+
+<div id="Update Crops" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Update Crops</h3>
+  <div class="container" style="margin-left:-80px;">
+        <div class="table-wrapper" style="width:1022px;">
+            <div class="table-title">
+                <div class="row">
+				<div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new" style="background-color:black;"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+			<table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width:50px;">_id</th>
+                        <th style="width:150px;">Date</th>
+						<th style="width:150px;">Farmer Name</th>
+                        <th style="width:150px;">Crop Name</th>
+						<th style="width:150px;">Crop Quantity</th>
+						<th style="width:150px;">Crop Description</th>
+						<th style="width:80px;">Crop Image</th>
+						<th style="width:80px;">Crop Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>29-03-2020</td>
+						<td>Somashekarayya</td>
+						<td>lemon</td>
+						<td>1</td>
+						<td>xyz</td>
+						<td>lemon.jpg</td>
+						<td>Rs.5</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit"  style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>29-03-2020</td>
+						<td>Somashekarayya</td>
+						<td>lemon</td>
+						<td>1</td>
+						<td>xyz</td>
+						<td>lemon.jpg</td>
+						<td>Rs.5</td>
+						<td>
+							<a class="add" title="Add"  data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>29-03-2020</td>
+						<td>Somashekarayya</td>
+						<td>lemon</td>
+						<td>1</td>
+						<td>xyz</td>
+						<td>lemon.jpg</td>
+						<td>Rs.5</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a class="edit" title="Edit" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a class="delete" title="Delete" style="color:#a0d034;" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>      
+                </tbody>
+            </table>
+        </div>
+    </div>     
+</div>
+
+</div>
+
+<div id="Customer Details" class="tabcontent" >
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Customer Details</h3>
+  <div class="container" style="margin-left:-80px;">
+        <div class="table-wrapper" style="width:500px;">
+            <div class="table-title">
+                <div class="row">
+				<div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new" style="background-color:black;"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+			<table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width:50px;">_id</th>
+                        <th style="width:130px;">CustomerName</th>
+						<th style="width:130px;">Contact_no</th>
+                        <th style="width:150px;">email</th>
+						<th style="width:150px;">Address</th>
+					</tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Chidanand H</td>
+						<td>9448265211</td>
+						<td>chidanandh@gmail.com</td>
+						<td>#25, 3rd main, 4th cross Malleshpalaya</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>     
+</div>
+</div>
+
+</div>
+
+<div id="Shipping Details" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Shipping Details</h3>
+  <div class="container" style="margin-right:-90px;">
+        <div class="table-wrapper" style="width:-1000px;margin-right:-30px;">
+            <div class="table-title">
+                <div class="row">
+				<div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new" style="background-color:black;"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+			<table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width:50px;">_id</th>
+                        <th style="width:130px;">Customer Name</th>
+						<th style="width:130px;">Farmer Name</th>
+                        <th style="width:120px;">Crop Name</th>
+						<th style="width:120px;">Crop Quantity</th>
+						<th style="width:130px;">Crop Description</th>
+						<th style="width:80px;">Crop Price</th>
+						<th style="width:100px;">dos</th>
+						<th style="width:100px;">dob</th>
+						<th style="width:100px;">Shipping Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Chidanand H</td>
+						<td>Somashekarayya</td>
+						<td>lemon</td>
+						<td>1</td>
+						<td>xyz</td>
+						<td>Rs.5</td>
+						<td>2-04-2020</td>
+						<td>3-04-2020</td>
+						<td>#25, 3rd main, 4th cross Malleshpalaya</td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>     
+</div>
+</div>
+
+
+					
+	</div>
+</div>		
+</div>			
+</form>				
+				
+	<div id="map">
+	</div>
+<!-- //contact -->
+	 <!--<script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(33.6, 49.966667), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [	{		"featureType":"landscape",		"stylers":[			{				"hue":"#FFA800"			},			{				"saturation":0			},			{				"lightness":0			},			{				"gamma":1			}		]	},	{		"featureType":"road.highway",		"stylers":[			{				"hue":"#53FF00"			},			{				"saturation":-73			},			{				"lightness":40			},			{				"gamma":1			}		]	},	{		"featureType":"road.arterial",		"stylers":[			{				"hue":"#FBFF00"			},			{				"saturation":0			},			{				"lightness":0			},			{				"gamma":1			}		]	},	{		"featureType":"road.local",		"stylers":[			{				"hue":"#00FFFD"			},			{				"saturation":0			},			{				"lightness":30			},			{				"gamma":1			}		]	},	{		"featureType":"water",		"stylers":[			{				"hue":"#00BFFF"			},			{				"saturation":6			},			{				"lightness":8			},			{				"gamma":1			}		]	},	{		"featureType":"poi",		"stylers":[			{				"hue":"#679714"			},			{				"saturation":33.4			},			{				"lightness":-25.4			},			{				"gamma":1			}		]	}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(33.6, 49.966667),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>-->
+<!-- footer -->
+	<div class="footer" style="width:1353px;margin-right:190px;height:485px;">
+		<div class="container" >
+			<div class="w3agile_footer_grids" >
+				<div class="col-md-3 agileinfo_footer_grid" >
+					<div class="agileits_w3layouts_footer_logo" >
+						<h2><a href="../../../index.html"><span>K</span>rishi Mithra<i>Grow healthy products</i></a></h2>
+					</div>
+				</div>
+				<div class="col-md-4 agileinfo_footer_grid">
+					<h3>Contact Info</h3>
+					<h4>Call Us <span>8073445472</span></h4>
+					<p>My Company, 875 Jewel Road <span>Bidar.</span></p>
+					<ul class="agileits_social_list">
+						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 agileinfo_footer_grid agileinfo_footer_grid1">
+					<h3>Navigation</h3>
+					<ul class="w3layouts_footer_nav">
+						<li><a href="../../../index.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
+						<li><a href="../../../icons.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Web Icons</a></li>
+						<li><a href="../../../typography.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Typography</a></li>
+						<li><a href="../../../contact.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 agileinfo_footer_grid">
+					<h3>Blog Posts</h3>
+					<div class="agileinfo_footer_grid_left">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="agileinfo_footer_grid_left">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/2.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="agileinfo_footer_grid_left">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="agileinfo_footer_grid_left">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/3.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="w3_agileits_footer_copy">
+			<div class="container">
+				<p>© 2020 Krishi Mithra. All rights reserved | Design by  <a href="http://w3layouts.com">W3layouts.</a></p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- menu -->
+	<script>
+		$(function() {
+			
+			initDropDowns($("div.shy-menu"));
+
+		});
+
+		function initDropDowns(allMenus) {
+
+			allMenus.children(".shy-menu-hamburger").on("click", function() {
+				
+				var thisTrigger = jQuery(this),
+					thisMenu = thisTrigger.parent(),
+					thisPanel = thisTrigger.next();
+
+				if (thisMenu.hasClass("is-open")) {
+
+					thisMenu.removeClass("is-open");
+
+				} else {			
+					
+					allMenus.removeClass("is-open");	
+					thisMenu.addClass("is-open");
+					thisPanel.on("click", function(e) {
+						e.stopPropagation();
+					});
+				}
+				
+				return false;
+			});
+		}
+	</script>
+<!-- //menu -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+		<!-- //here ends scrolling icon -->	
+			
+		function openFarmertabs(evt, cropDetails) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cropDetails).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	
+
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+	var actions = $("table td:last-child").html();
+	// Append table with add row form on add new button click
+    $(".add-new").click(function(){
+		$(this).attr("disabled", "disabled");
+		var index = $("table tbody tr:last-child").index();
+        var row = '<tr>' +
+            '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+            '<td><input type="text" class="form-control" name="department" id="department"></td>' +
+            '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
+			'<td>' + actions + '</td>' +
+        '</tr>';
+    	$("table").append(row);		
+		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+	// Add row on add button click
+	$(document).on("click", ".add", function(){
+		var empty = false;
+		var input = $(this).parents("tr").find('input[type="text"]');
+        input.each(function(){
+			if(!$(this).val()){
+				$(this).addClass("error");
+				empty = true;
+			} else{
+                $(this).removeClass("error");
+            }
+		});
+		$(this).parents("tr").find(".error").first().focus();
+		if(!empty){
+			input.each(function(){
+				$(this).parent("td").html($(this).val());
+			});			
+			$(this).parents("tr").find(".add, .edit").toggle();
+			$(".add-new").removeAttr("disabled");
+		}		
+    });
+	// Edit row on edit button click
+	$(document).on("click", ".edit", function(){		
+        $(this).parents("tr").find("td:not(:last-child)").each(function(){
+			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+		});		
+		$(this).parents("tr").find(".add, .edit").toggle();
+		$(".add-new").attr("disabled", "disabled");
+    });
+	// Delete row on delete button click
+	$(document).on("click", ".delete", function(){
+        $(this).parents("tr").remove();
+		$(".add-new").removeAttr("disabled");
+    });
+});
+
+</script>
+
+</body>
+</html>
