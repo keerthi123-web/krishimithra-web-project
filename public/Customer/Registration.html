@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Customer | Login &amp; Register</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                	
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1 style="font-family:Arial;color:#a4dd25;"><b>Register Form</b></h1>
+                            
+                        </div>
+                    </div>
+                    
+                   
+                        	
+                        	<div class="form-box" style="width:450px;margin-left:350px;">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3 style="font-family:Arial;">Register now</h3>
+	                            		<p style="font-family:Arial;">Fill in the form below to get instant access:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="/Customer/Registration" method="post" class="registration-form">
+				                    	<!--<div class="form-group">
+				                    		<label class="sr-only" style="font-family:Arial;" for="form-first-name">Farmer Id</label>
+				                        	<input type="text" name="form-first-name" style="font-family:Arial;" placeholder="Farmer Id..." class="form-first-name form-control" id="form-first-name">
+				                        </div>-->
+				                        <div class="form-group">
+				                        	<label class="sr-only" style="font-family:Arial;" for="form-full-name">Customer Name</label>
+				                        	<input type="text" name="CustomerName" style="font-family:Arial;" placeholder="Farmer Name..." class="form-last-name form-control" id="form-full-name" required/>
+				                        </div>
+										<div class="form-group">
+				                        	<label class="sr-only" style="font-family:Arial;" for="form-Contact-no">Contact No</label>
+				                        	<input type="text" name="Contact_no" style="font-family:Arial;" placeholder="Contact no..." class="form-last-name form-control" id="form-last-name" required/>
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" style="font-family:Arial;" for="form-email">Email</label>
+				                        	<input type="text" name="e_mail" style="font-family:Arial;" placeholder="Email..." class="form-email form-control" id="form-email" required/>
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" style="font-family:Arial;" for="form-Contact-no">First Address</label>
+				                        	<input type="text" name="FirstAddress" style="font-family:Arial;" placeholder="First Address..." class="form-last-name form-control" id="form-last-name" required/>
+				                        </div>
+										<div class="form-group">
+				                        	<label class="sr-only" style="font-family:Arial;" for="form-Contact-no">Second Address</label>
+				                        	<input type="text" name="SecondAddress" style="font-family:Arial;" placeholder="Second Address.." class="form-last-name form-control" id="form-last-name" required/>
+				                        </div>
+										<p style="font-family:Arial;">Select District:</p>
+										<div class="form-group">
+										<select id="District" name="District" style="width:400px;height:40px;font-family:Arial;" required/>
+										<option value ="Bagalkote">Bagalkote</option>
+										<option value ="Bangalore Rural">Bangalore Rural</option>
+										<option value ="Bangalore Urban">Bangalore Urban</option>
+										<option value ="Belagavi">Belagavi</option>
+										<option value ="Bellary">Bellary</option>
+										<option value ="Bidar">Bidar</option>
+										<option value ="Bijapur">Bijapur</option>
+										<option value ="Chamarajanagar">Chamarajanagar</option>
+										<option value ="Chikkamagaluru">Chikkamagaluru</option>
+										<option value ="Chitradurga">Chitradurga</option>
+										<option value ="Dakshina Kannada">Dakshina Kannada</option>
+										<option value ="Davanagere">Davanagere</option>
+										<option value ="Dharwad">Dharwad</option>
+										<option value ="Gadag">Gadag</option>
+										<option value ="Gulbarga">Gulbarga</option>
+										<option value ="Hassan">Hassan</option>
+										<option value ="Haveri">Haveri</option>
+										<option value ="Kodagu">Kodagu</option>
+										<option value ="Kolar">Kolar</option>
+										<option value ="Koppal">Koppal</option>
+										<option value ="Mandya">Mandya</option>
+										<option value ="Mysore">Mysore</option>
+										<option value ="Raichur">Raichur</option>
+										<option value ="Shimoga">Shimoga</option>
+										<option value ="Tumkur">Tumkur</option>
+										<option value ="Udupi">Udupi</option>
+										<option value ="Uttara Kannada">Uttara Kannada</option>
+										</select>
+										</div>
+										<p style="font-family:Arial;">Select Taluk:</p>
+										<div class="form-group" >
+										<select id="Taluk" name="Taluk" style="width:400px;height:40px;font-family:Arial;" required/>
+										<option value ="Bagalkote">Bagalkote</option>
+										<option value ="Jamkhandi">Jamkhandi</option>
+										<option value ="Mudhol">Mudhol</option>
+										<option value ="Badami">Badami</option>
+										<option value ="Bilagi">Bilagi</option>
+										<option value ="Hunagunda">Hunagunda</option>
+										<option value ="Ilkal">Ilkal</option>
+										<option value ="Rabkavi Banhatti">Rabkavi Banhatti</option>
+										<option value ="Guledgudda">Guledgudda</option>
+										<option value ="Terdala">Terdala</option>
+										<option value ="Hagaribommanahalli">Hagaribommanahalli</option>
+										<option value ="Harpanahalli">Harpanahalli</option>
+										<option value ="Hoovina Hadagali">Hoovina Hadagali</option>
+										<option value ="Hosapete">Hosapete</option>
+										<option value ="Kudligi">Kudligi</option>
+										<option value ="Sanduru">Sanduru</option>
+										<option value ="Siraguppa">Siraguppa</option>
+										<option value ="Athani">Athani</option>
+										<option value ="Belagavi">Belagavi</option>
+										<option value ="Bailhongal">Bailhongal</option>
+										<option value ="Chikkodi">Chikkodi</option>
+										<option value ="Gokak">Gokak</option>
+										<option value ="Khanapura">Khanapura</option>
+										<option value ="Mudalgi">Mudalgi</option>
+										<option value ="Nippani">Nippani</option>
+										<option value ="Raybag">Raybag</option>
+										<option value ="Savadatti">Savadatti</option>
+										<option value ="Ramadurga">Ramadurga</option>
+										<option value ="Kagawada">Kagawada</option>
+										<option value ="Hukkeri">Hukkeri</option>
+										<option value ="Kitturu">Kitturu</option>
+										<option value ="yargatti">yargatti</option>
+										<option value ="Kengeri">Kengeri</option>
+										<option value ="Krishnaraja pura">Krishnaraja pura</option>
+										<option value ="Yelahanka">Yelahanka</option>
+										<option value ="Nelamangala">Nelamangala</option>
+										<option value ="Doddaballapura">Doddaballapura</option>
+										<option value ="Devanahalli">Devanahalli</option>
+										<option value ="Hosakote">Hosakote</option>
+										<option value ="Aurad">Aurad</option>
+										<option value ="Basavakalyana">Basavakalyana</option>
+										<option value ="Bhalki">Bhalki</option>
+										<option value ="Bidar">Bidar</option>
+										<option value ="Chitgoppa">Chitgoppa</option>
+										<option value ="Hulsoor">Hulsoor</option>
+										<option value ="Humnabad">Humnabad</option>
+										<option value ="Kamalnagar">Kamalnagar</option>
+										<option value ="Chamarajanagara">Chamarajanagara</option>
+										<option value ="Gundlupete">Gundlupete</option>
+										<option value ="Kollegala">Kollegala</option>
+										<option value ="Yelanduru">Yelanduru</option>
+										<option value ="Hanur">Hanur</option>
+										<option value ="Rampura">Rampura</option>
+										<option value ="Chikkaballapura">Chikkaballapura</option>
+										<option value ="Bagepalli">Bagepalli</option>
+										<option value ="Chintamani">Chintamani</option>
+										<option value ="Gauribidanur">Gauribidanur</option>
+										<option value ="Gudibanda">Gudibanda</option>
+										<option value ="Sidlaghatta">Sidlaghatta</option>
+										<option value ="Chelur">Chelur</option>
+										<option value ="Chikkamagaluru">Chikkamagaluru</option>
+										<option value ="Kadur">Kadur</option>
+										<option value ="Koppa">Koppa</option>
+										<option value ="Mudigere">Mudigere</option>
+										<option value ="Narasimharajapura">Narasimharajapura</option>
+										<option value ="Sringeri">Sringeri</option>
+										<option value ="Tarikere">Tarikere</option>
+										<option value ="Ajjampura">Ajjampura</option>
+										<option value ="Kalasa">Kalasa</option>
+										<option value ="Chitradurga">Chitradurga</option>
+										<option value ="Challakere">Challakere</option>
+										<option value ="Hiriyur">Hiriyur</option>
+										<option value ="Holalkere">Holalkere</option>
+										<option value ="Hosadurga">Hosadurga</option>
+										<option value ="Molakalmuru">Molakalmuru</option>
+										<option value ="Mangaluru">Mangaluru</option>
+										<option value ="Ullal">Ullal</option>
+										<option value ="Mulki">Mulki</option>
+										<option value ="Moodbidri">Moodbidri</option>
+										<option value ="Bantwala">Bantwala</option>
+										<option value ="Beltangadi">Beltangadi</option>
+										<option value ="Puttur">Puttur</option>
+										<option value ="Sulya">Sulya</option>
+										<option value ="Kadaba">Kadaba</option>
+										<option value ="Davanagere">Davanagere</option>
+										<option value ="Harihara">Harihara</option>
+										<option value ="Honnali">Honnali</option>
+										<option value ="Nyamathi">Nyamathi</option>
+										<option value ="Jagalur">Jagalur</option>
+										<option value ="Kalghatgi">Kalghatgi</option>
+										<option value ="Dharawada">Dharawada</option>
+										<option value ="Hubballi(Rural)">Hubballi(Rural)</option>
+										<option value ="Hubballi(Urban)">Hubballi(Urban)</option>
+										<option value ="Kundgol">Kundgol</option>
+										<option value ="Navalgund">Navalgund</option>
+										<option value ="Alnavara">Alnavara</option>
+										<option value ="Annigeri">Annigeri</option>
+										<option value ="Gadaga">Gadaga</option>
+										<option value ="Nargund">Nargund</option>
+										<option value ="Mundargi">Mundargi</option>
+										<option value ="Ron">Ron</option>
+										<option value ="Shirahatti">Shirahatti</option>
+										<option value ="Hassan">Hassan</option>
+										<option value ="Arasikere">Arasikere</option>
+										<option value ="Channarayapattana">Channarayapattana</option>
+										<option value ="Holenarsipura">Holenarsipura</option>
+										<option value ="Sakleshpura">Sakleshpura</option>
+										<option value ="Aluru">Aluru</option>
+										<option value ="Arakalagudu">Arakalagudu</option>
+										<option value ="Beluru">Beluru</option>
+										<option value ="Ranibennur">Ranibennur</option>
+										<option value ="Byadgi">Byadgi</option>
+										<option value ="Hangal">Hangal</option>
+										<option value ="Haveri">Haveri</option>
+										<option value ="Savanuru">Savanuru</option>
+										<option value ="Hirekeruru">Hirekeruru</option>
+										<option value ="shiggavi">shiggavi</option>
+										<option value ="Rattihalli">Rattihalli</option>
+										<option value ="Kalaburgi">Kalaburgi</option>
+										<option value ="Afzalpura">Afzalpura</option>
+										<option value ="Alanda">Alanda</option>
+										<option value ="Chitapura">Chitapura</option>
+										<option value ="jevargi">jevargi</option>
+										<option value ="Sedam">Sedam</option>
+										<option value ="Shahabad">Shahabad</option>
+										<option value ="Madikeri">Madikeri</option>
+										<option value ="Somawarapete">Somawarapete</option>
+										<option value ="Virajapete">Virajapete</option>
+										<option value ="Kolara">Kolara</option>
+										<option value ="Bangapete">Bangapete</option>
+										<option value ="Maluru">Maluru</option>
+										<option value ="Mulabagilu">Mulabagilu</option>
+										<option value ="Srinivasapura">Srinivasapura</option>
+										<option value ="Kolar Gold Field">Kolar Gold Field</option>
+										<option value ="Gangavathi">Gangavathi</option>
+										<option value ="Koppala">Koppala</option>
+										<option value ="Kushtagi">Kushtagi</option>
+										<option value ="Yalaburga">Yalaburga</option>
+										<option value ="Kanakagiri">Kanakagiri</option>
+										<option value ="Karatagi">Karatagi</option>
+										<option value ="Kukanoor">Kukanoor</option>
+										<option value ="Mandya">Mandya</option>
+										<option value ="Malavalli">Malavalli</option>
+										<option value ="Srirangapattana">Srirangapattana</option>
+										<option value ="Krishnarajpet">Krishnarajpet</option>
+										<option value ="Nagamangala">Nagamangala</option>
+										<option value ="Panadavapura">Panadavapura</option>
+										<option value ="Mysuru">Mysuru</option>
+										<option value ="Hunasuru">Hunasuru</option>
+										<option value ="Krishnarajanagara">Krishnarajanagara</option>
+										<option value ="Nanjanagudu">Nanjanagudu</option>
+										<option value ="Heggadadevanakote">Heggadadevanakote</option>
+										<option value ="piriyapattana">piriyapattana</option>
+										<option value ="T.Narasipura">T.Narasipura</option>
+										<option value ="Saragur">Saragur</option>
+										<option value ="Saligrama">Saligrama</option>
+										<option value ="Raichur">Raichur</option>
+										<option value ="Manvi">Manvi</option>
+										<option value ="Sindhnur">Sindhnur</option>
+										<option value ="Devadurga">Devadurga</option>
+										<option value ="Lingsugur">Lingsugur</option>
+										<option value ="Sirawara">Sirawara</option>
+										<option value ="Maski">Maski</option>
+										<option value ="Ramanagara">Ramanagara</option>
+										<option value ="Magadi">Magadi</option>
+										<option value ="Kanakapura">Kanakapura</option>
+										<option value ="Channapatna">Channapatna</option>
+										<option value ="Harohalli">Harohalli</option>
+										<option value ="Shivamogga">Shivamogga</option>
+										<option value ="Bhadravathi">Bhadravathi</option>
+										<option value ="Hosanagara">Hosanagara</option>
+										<option value ="Shikaripura">Shikaripura</option>
+										<option value ="Soraba">Soraba</option>
+										<option value ="Tirthahalli">Tirthahalli</option>
+										<option value ="Sagara">Sagara</option>
+										<option value ="Tumakuru">Tumakuru</option>
+										<option value ="Chikkanayakanahalli">Chikkanayakanahalli</option>
+										<option value ="Kunigal">Kunigal</option>
+										<option value ="Madhugiri">Madhugiri</option>
+										<option value ="Sira">Sira</option>
+										<option value ="Tiptur">Tiptur</option>
+										<option value ="Gubbi">Gubbi</option>
+										<option value ="Koratagere">Koratagere</option>
+										<option value ="Pavagada">Pavagada</option>
+										<option value ="Turuvekere">Turuvekere</option>
+										<option value ="Udupi">Udupi</option>
+										<option value ="Kaup">Kaup</option>
+										<option value ="Brahmavara">Brahmavara</option>
+										<option value ="Karkala">Karkala</option>
+										<option value ="Kundapura">Kundapura</option>
+										<option value ="Hebri">Hebri</option>
+										<option value ="Byndoor">Byndoor</option>
+										<option value ="Karawara">Karawara</option>
+										<option value ="Sirsi">Sirsi</option>
+										<option value ="Joida">Joida</option>
+										<option value ="Dandeli">Dandeli</option>
+										<option value ="Bhatkal">Bhatkal</option>
+										<option value ="Kumta">Kumta</option>
+										<option value ="Ankola">Ankola</option>
+										<option value ="Haliyal">Haliyal</option>
+										<option value ="Honnavar">Honnavar</option>
+										<option value ="Mundgod">Mundgod</option>
+										<option value ="Siddapura">Siddapura</option>
+										<option value ="Yellapur">Yellapur</option>
+										<option value ="Vijayapura">Vijayapura</option>
+										<option value ="Indi">Indi</option>
+										<option value ="Basavana Bagewadi">Basavana Bagewadi</option>
+										<option value ="Sindgi">Sindgi</option>
+										<option value ="Muddebihal">Muddebihal</option>
+										<option value ="Talikote">Talikote</option>
+										<option value ="Devara Hipparagi">Devara Hipparagi</option>
+										<option value ="Chadchan">Chadchan</option>
+										<option value ="Tikota">Tikota</option>
+										<option value ="Babaleshwar">Babaleshwar</option>
+										<option value ="Kolhar">Kolhar</option>
+										<option value ="Nidagundi">Nidagundi</option>
+										<option value ="Almel">Almel</option>
+										<option value ="Yadagiri">Yadagiri</option>
+										<option value ="Shahapura">Shahapura</option>
+										<option value ="Surapura">Surapura</option>
+										<option value ="Gurmitkal">Gurmitkal</option>
+										<option value ="Vadagera">Vadagera</option>
+										<option value ="Hunsagi">Hunsagi</option>
+										<option value ="BangaloreNorth">Bangalore North</option>
+										<option value ="BangaloreWest">Bangalore West</option>
+										<option value ="BangaloreEast">Bangalore East</option>
+										<option value ="BangaloreSouth">Bangalore South</option>
+										</select>
+										</div>
+										
+										<div class="form-group">
+				                        	<label class="sr-only" style="font-family:Arial;" for="form-Contact-no">Pincode</label>
+				                        	<input type="text" name="PinCode" style="font-family:Arial;" placeholder="Pincode" class="form-last-name form-control" id="form-last-name" required/>
+				                        </div>
+										<div class="form-group">
+				                        	<label class="sr-only" style="font-family:Arial;" for="form-Contact-no">Password</label>
+				                        	<input type="Password" name="Password" style="font-family:Arial;" placeholder="Password..." class="form-last-name form-control" id="form-last-name" required/>
+				                        </div>
+				                        <button type="submit" style="font-family:Arial;" class="btn"><b>REGISTER</b></button>
+										<p style="font-family:Arial;">already a member ? <a href="index.html" style="color:black;"><b>LOGIN</b></a>.</p>
+				                    </form>
+			                    </div>
+                        	</div>
+                        	
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+      
+    </body>
+
+</html>
