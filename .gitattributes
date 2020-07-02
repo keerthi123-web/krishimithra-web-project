@@ -1,0 +1,6 @@
+*.psd filter=lfs diff=lfs merge=lfs -text
+public/Admin/Admin_Credentials/Admin_Login/admin filter=lfs diff=lfs merge=lfs -text
+panel/images/Videos/videoplayback.m4 filter=lfs diff=lfs merge=lfs -text
+. filter=lfs diff=lfs merge=lfs -text
+*.public/Admin/Admin_Credentials/Admin_Login/admin[[:space:]]Panel/images/Videos/videoplayback[[:space:]](2).mp4 filter=lfs diff=lfs merge=lfs -text
+*.public/Admin/Admin_Credentials/Admin_Login/admin[[:space:]]Panel/image/Videos/videoplayback[[:space:]](3).mp4 filter=lfs diff=lfs merge=lfs -text

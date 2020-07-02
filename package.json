@@ -1,0 +1,40 @@
+{
+	"name": "Bootstrap4",
+	"version": "1.0.0",
+	"description": "This is a sample website",
+	"main": "add.js",
+	"scripts": {
+		"start": "npm run lite",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lite": "lite-server",
+		"scss": "node-sass -o css/ css/"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"lite-server": "^2.3.0",
+		"node": "^13.9.0",
+		"nodemon": "^2.0.4"
+	},
+	"dependencies": {
+		"bootstrap": "^4.0.0",
+		"bootstrap-social": "^5.1.1",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-handlebars": "^4.0.4",
+		"express-session": "^1.17.1",
+		"flash": "^1.1.0",
+		"font-awesome": "^4.7.0",
+		"joi": "^14.3.1",
+		"jquery": "^3.5.0",
+		"mailgun-js": "^0.22.0",
+		"mongodb": "^3.5.7",
+		"mongoose": "^5.9.16",
+		"nodemailer": "^6.4.8",
+		"nodemailer-mailgun-transport": "^2.0.0",
+		"passport": "^0.4.1",
+		"path": "^0.12.7",
+		"popper": "^1.0.1",
+		"popper.js": "^1.12.9"
+	}
+}
