@@ -30,7 +30,7 @@
 		"mailgun-js": "^0.22.0",
 		"mongodb": "^3.5.7",
 		"mongoose": "^5.9.16",
-		"nodemailer": "^6.4.8",
+		"nodemailer": "^6.4.16",
 		"nodemailer-mailgun-transport": "^2.0.0",
 		"passport": "^0.4.1",
 		"path": "^0.12.7",
